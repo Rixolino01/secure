@@ -3,11 +3,12 @@ import { Button, Text } from "@rneui/themed"
 import axiosConfig from "./axios"
 import { Divider, ListItem } from "react-native-elements"
 import { ListItemContent } from "@rneui/base/dist/ListItem/ListItem.Content"
-import { ScrollView } from "react-native"
+import { ScrollView, Image } from "react-native"
 import ListItemTitle from "react-native-elements/dist/list/ListItemTitle"
 import { ListItemSubtitle } from "@rneui/base/dist/ListItem/ListItem.Subtitle"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import * as SecureStore from 'expo-secure-store'
+
 
 export default function Home({ navigation }) {
     const [produtos, setProdutos] = useState([])

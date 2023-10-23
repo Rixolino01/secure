@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native"
 import Login from "./pages/Login"
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from "./pages/Home";
+//import Initial from "./pages/Initial";
 
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator>        
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>

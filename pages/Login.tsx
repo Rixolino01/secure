@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar'
 import { useState,useEffect } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, Image } from 'react-native'
 
 import { Text, Button, Input } from '@rneui/themed'
 import * as SecureStore from 'expo-secure-store'
@@ -36,9 +36,10 @@ export default function Login({navigation}) {
       }
     })
   })
-
+ 
   return (
     <View style={styles.container}>
+      <Image style={styles.img} source={require('./src/img/logo01-removebg-preview.png')}/>
       <Text h1>Acesso ao APP</Text>
       <Text>Login</Text>
       <Input onChangeText={setLogin} />
@@ -55,12 +56,16 @@ export default function Login({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#001F3D',
     alignItems: 'center',
     justifyContent: 'center',
   },
   alert: {
     marginTop: 20,
     fontWeight: 'bold',
+  },
+  img:{
+    width: 250,
+    height: 250
   }
 });
