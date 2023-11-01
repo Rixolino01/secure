@@ -39,8 +39,8 @@ export default function Login({navigation}) {
  
   return (
     <View style={styles.container}>
+      <Text h1>Robertinho</Text>
       <Image style={styles.img} source={require('./src/img/logo01-removebg-preview.png')}/>
-      <Text h1>Acesso ao APP</Text>
       <Text>Login</Text>
       <Input onChangeText={setLogin} />
       <Text>Senha</Text>
