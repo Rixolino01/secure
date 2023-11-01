@@ -19,7 +19,7 @@ export default function Home({ navigation }) {
             setProdutos(response.data.products)
         })
         .catch(() => {
-            alert('Erro')
+            alert('Erro!')
         })
         AsyncStorage.getItem('user').then((user) =>{
             setNomeUser(user)
